@@ -87,6 +87,49 @@ const education = [
   'B.Eng., Mechanical Engineering - University of Nigeria Nsukka, 2005',
 ]
 
+const coreStrengths = [
+  {
+    title: 'Data Science, Machine Learning & AI',
+    details:
+      'Designing and deploying AI solutions, working with large datasets, applying exploratory data analysis and statistical methods, fine-tuning models, and handling evaluation, optimization, deployment, and integration with enterprise systems.',
+  },
+  {
+    title: 'Natural Language Processing & Responsible AI',
+    details:
+      'Building NLP-enabled solutions, designing AI systems end to end, implementing practical AI workflows, and promoting ethical, reliable use of AI technologies.',
+  },
+  {
+    title: 'Monitoring & Operations',
+    details:
+      'Event monitoring, operations management, service assurance, uptime protection, incident triage, and escalation in high-availability environments.',
+  },
+  {
+    title: 'Incident, Problem & Change Management',
+    details:
+      'Incident coordination, root-cause analysis support, problem tracking, change planning, and maintenance window execution.',
+  },
+  {
+    title: 'Telecom Network Support',
+    details:
+      'Core network connectivity support, routing and configuration integrity, interconnection coordination, subscriber database management, and managed services execution.',
+  },
+  {
+    title: 'Technical Execution',
+    details:
+      'Deployment, acceptance testing, configuration, troubleshooting, performance reporting, and capacity and utilization analysis.',
+  },
+  {
+    title: 'Documentation & Improvement',
+    details:
+      'Issue logging, action tracking, operational reporting, SOP support, and continuous coaching and mentorship to improve team execution quality.',
+  },
+  {
+    title: 'Customer & Team Skills',
+    details:
+      'Professional communication, quick judgment, de-escalation mindset, and accountability in cross-functional and customer-facing situations.',
+  },
+]
+
 const certifications = [
   'ITIL',
   'HCNA',
@@ -174,11 +217,12 @@ function App() {
 
         <section id="work" className="card">
           <h2>Core Strengths</h2>
-          <div className="chips">
-            {certifications.map((item) => (
-              <span key={item} className="chip">
-                {item}
-              </span>
+          <div className="grid two">
+            {coreStrengths.map((item) => (
+              <article key={item.title} className="project-card">
+                <h3>{item.title}</h3>
+                <p>{item.details}</p>
+              </article>
             ))}
           </div>
         </section>
