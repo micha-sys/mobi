@@ -54,21 +54,28 @@ const careerTimeline = [
       'Performed testing, validation, issue analysis, and anomaly review across 50+ source systems feeding enterprise data warehouse and reporting environments.',
   },
   {
-    years: 'May 2018 - Mar 2019',
+    years: '2019',
+    role: 'Manager, Fulfillment Department',
+    company: 'Walmart Canada - Ottawa, CA',
+    details:
+      'Provided leadership and supervision for fulfillment department operations, executed floor and backroom stocking and sampling, and managed receiving inventory and warehousing workflows.',
+  },
+  {
+    years: '2018 - 2019',
     role: 'Manager, Network Operations Center',
     company: 'Huawei Technologies - Abuja, Nigeria',
     details:
       'Led service operations and process optimization in a 24/7 data center environment, improving service quality and SLA performance. Oversaw capacity planning, utilization analysis, change management, technical reporting, and stakeholder coordination for infrastructure and software upgrades.',
   },
   {
-    years: 'Dec 2010 - Sep 2018',
+    years: '2010 - 2018',
     role: 'Team Lead, Core Network Technology Products',
     company: 'Huawei Technologies - West Africa',
     details:
       'Led deployment, acceptance, configuration, and troubleshooting of core network technology products while coordinating cross-functional operations and service continuity in telecom environments.',
   },
   {
-    years: 'Mar 2008 - Dec 2010',
+    years: '2008 - 2010',
     role: 'Specialist, Network Operations',
     company: 'ZoomMobile',
     details:
@@ -106,6 +113,16 @@ const coreStrengths = [
     title: 'Data Science, Machine Learning & AI',
     details:
       'Designing and deploying AI solutions, working with large datasets, applying exploratory data analysis and statistical methods, fine-tuning models, and handling evaluation, optimization, deployment, and integration with enterprise systems.',
+  },
+  {
+    title: 'Analytics & BI',
+    details:
+      'Power BI, Tableau, and Cognos Analytics for dashboarding, reporting, and KPI analysis to support operational and strategic decision-making.',
+  },
+  {
+    title: 'Data Engineering',
+    details:
+      'Data validation, ETL workflows, data warehousing, data modeling, data quality testing, metadata development, and automation for reliable data pipelines.',
   },
   {
     title: 'Natural Language Processing & Responsible AI',
