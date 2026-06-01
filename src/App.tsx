@@ -35,30 +35,44 @@ const careerTimeline = [
   {
     years: '2023 - Present',
     role: 'Data Scientist, Emerging Technologies and Innovation',
-    company: 'Government of Canada',
+    company: 'Federal Government Agency',
     details:
       'Led production delivery of CAVIA and implemented cloud components across API Gateway, Lambda, OpenSearch, SageMaker endpoints, and CI/CD pipelines.',
   },
   {
     years: '2021 - 2023',
     role: 'Data Scientist, Operational Workload Development',
-    company: 'Government of Canada',
+    company: 'Federal Government Agency',
     details:
       'Built analytics and reporting solutions end-to-end, including data preparation, model development, validation, reporting, and stakeholder communication.',
   },
   {
     years: '2020 - 2021',
     role: 'Data Officer',
-    company: 'Government of Canada',
+    company: 'Federal Government Agency',
     details:
       'Performed testing, validation, issue analysis, and anomaly review across 50+ source systems feeding enterprise data warehouse and reporting environments.',
   },
   {
-    years: '2008 - 2019',
-    role: 'Network Operations and Core Network Leadership',
-    company: 'Huawei Technologies',
+    years: 'May 2018 - Mar 2019',
+    role: 'Manager, Network Operations Center',
+    company: 'Huawei Technologies - Abuja, Nigeria',
     details:
-      'Led and supported NOC and core network operations, incident response, deployments, acceptance testing, configuration, troubleshooting, and mentorship across telecom environments.',
+      'Led service operations and process optimization in a 24/7 data center environment, improving service quality and SLA performance. Oversaw capacity planning, utilization analysis, change management, technical reporting, and stakeholder coordination for infrastructure and software upgrades.',
+  },
+  {
+    years: 'Dec 2010 - Sep 2018',
+    role: 'Team Lead, Core Network Technology Products',
+    company: 'Huawei Technologies - West Africa',
+    details:
+      'Led deployment, acceptance, configuration, and troubleshooting of core network technology products while coordinating cross-functional operations and service continuity in telecom environments.',
+  },
+  {
+    years: 'Mar 2008 - Dec 2010',
+    role: 'Specialist, Network Operations',
+    company: 'ZoomMobile',
+    details:
+      'Supported network operations, subscriber database management, monitoring, interconnection configuration, and performance reporting in telecom environments.',
   },
 ]
 
