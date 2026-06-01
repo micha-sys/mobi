@@ -314,6 +314,109 @@
   margin: 0.8rem auto 1.2rem;
 }
 
+/* Default dark theme */
+:root {
+  --ink-900: #f8fafc;
+  --ink-700: #cbd5e1;
+  --ink-500: #94a3b8;
+}
+
+.page {
+  background:
+    radial-gradient(circle at 10% 12%, rgba(217, 119, 6, 0.22), transparent 42%),
+    radial-gradient(circle at 84% 14%, rgba(20, 184, 166, 0.18), transparent 40%),
+    linear-gradient(154deg, #04070f 0%, #0b1220 52%, #07111c 100%);
+  color: var(--ink-900);
+}
+
+.nav {
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: rgba(15, 23, 42, 0.62);
+}
+
+.nav-links a {
+  color: var(--ink-700);
+}
+
+.nav-links a:hover {
+  background: rgba(51, 65, 85, 0.45);
+  color: #f8fafc;
+}
+
+.hero {
+  border: 1px solid rgba(245, 158, 11, 0.26);
+  background:
+    radial-gradient(circle at 80% 14%, rgba(13, 148, 136, 0.18), transparent 32%),
+    linear-gradient(152deg, rgba(15, 23, 42, 0.84), rgba(2, 6, 23, 0.92));
+  box-shadow: 0 20px 46px rgba(2, 6, 23, 0.55);
+}
+
+.hero h1,
+.metric h2,
+.card h2,
+.project-card h3,
+.timeline-item h3,
+.company {
+  color: #f8fafc;
+}
+
+.btn-ghost {
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(30, 41, 59, 0.72);
+  color: #e2e8f0;
+}
+
+.btn-ghost:hover {
+  border-color: rgba(245, 158, 11, 0.5);
+}
+
+.metric,
+.card,
+.project-card,
+.timeline-item,
+.chip {
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+.metric {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.82), rgba(17, 24, 39, 0.9));
+  box-shadow: 0 8px 20px rgba(2, 6, 23, 0.35);
+}
+
+.card {
+  background: linear-gradient(172deg, rgba(15, 23, 42, 0.86), rgba(2, 6, 23, 0.92));
+  box-shadow: 0 12px 28px rgba(2, 6, 23, 0.42);
+}
+
+.project-card {
+  background: linear-gradient(172deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.92));
+}
+
+.project-card:hover {
+  box-shadow: 0 12px 24px rgba(2, 6, 23, 0.42);
+}
+
+.card p,
+.stack,
+.subheading,
+.company,
+.chip,
+.timeline-item p {
+  color: var(--ink-700);
+}
+
+.timeline-item {
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.88));
+}
+
+.chip {
+  background: linear-gradient(180deg, rgba(30, 41, 59, 0.75), rgba(15, 23, 42, 0.95));
+}
+
+.project-card a {
+  color: #60a5fa;
+}
+
 @media (max-width: 920px) {
   .metrics,
   .grid.three,
