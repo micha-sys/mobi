@@ -1,10 +1,20 @@
+:root {
+  --ink-900: #172033;
+  --ink-700: #334155;
+  --ink-500: #64748b;
+  --paper: #ffffff;
+  --amber: #e36f12;
+  --amber-soft: #ffe8c8;
+  --teal-soft: #def5f3;
+}
+
 .page {
   min-height: 100vh;
   background:
-    radial-gradient(circle at 8% 10%, rgba(251, 146, 60, 0.25), transparent 44%),
-    radial-gradient(circle at 86% 22%, rgba(14, 165, 233, 0.21), transparent 42%),
-    linear-gradient(140deg, #fff8ec 0%, #f4f9ff 56%, #f3faef 100%);
-  color: #1f2937;
+    radial-gradient(circle at 12% 9%, rgba(254, 215, 170, 0.52), transparent 46%),
+    radial-gradient(circle at 84% 16%, rgba(153, 246, 228, 0.34), transparent 40%),
+    linear-gradient(154deg, #fff9ef 0%, #f8fcff 58%, #f5fff8 100%);
+  color: var(--ink-900);
   padding: 1rem;
 }
 
@@ -22,14 +32,19 @@
   justify-content: space-between;
   gap: 1rem;
   margin-top: 0.2rem;
+  padding: 0.58rem 0.68rem;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
 }
 
 .brand {
-  font-size: 0.84rem;
+  font-size: 0.78rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   font-weight: 800;
-  color: #b45309;
+  color: var(--amber);
 }
 
 .nav-links {
@@ -42,24 +57,27 @@
   text-decoration: none;
   font-size: 0.82rem;
   font-weight: 700;
-  color: #334155;
+  color: var(--ink-700);
   border-radius: 999px;
   padding: 0.45rem 0.75rem;
-  transition: background-color 160ms ease, color 160ms ease;
+  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
 }
 
 .nav-links a:hover {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.92);
   color: #0f172a;
+  transform: translateY(-1px);
 }
 
 .hero {
   margin-top: 0.9rem;
-  border: 1px solid rgba(251, 146, 60, 0.2);
+  border: 1px solid rgba(227, 111, 18, 0.22);
   border-radius: 26px;
   padding: 2.8rem 1.8rem;
-  background: linear-gradient(152deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.75));
-  box-shadow: 0 16px 42px rgba(15, 23, 42, 0.08);
+  background:
+    radial-gradient(circle at 80% 14%, rgba(222, 245, 243, 0.7), transparent 32%),
+    linear-gradient(152deg, rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.8));
+  box-shadow: 0 20px 46px rgba(15, 23, 42, 0.09);
   animation: rise 700ms ease;
 }
 
@@ -67,23 +85,23 @@
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: #c2410c;
+  color: #b45309;
   font-weight: 800;
   font-size: 0.76rem;
 }
 
 .hero h1 {
   margin: 0.85rem 0 0;
-  font-size: clamp(2rem, 5vw, 3.7rem);
+  font-size: clamp(2rem, 5vw, 3.9rem);
   line-height: 1.04;
-  max-width: 19ch;
+  max-width: 18ch;
   color: #0f172a;
 }
 
 .intro {
   margin-top: 1rem;
-  max-width: 66ch;
-  color: #334155;
+  max-width: 64ch;
+  color: var(--ink-700);
   font-size: 1.03rem;
 }
 
@@ -100,25 +118,29 @@
   text-decoration: none;
   font-weight: 700;
   font-size: 0.9rem;
-  padding: 0.62rem 1.06rem;
-  transition: transform 160ms ease, box-shadow 160ms ease;
+  padding: 0.64rem 1.1rem;
+  transition: transform 170ms ease, box-shadow 170ms ease, border-color 170ms ease;
 }
 
 .btn-solid {
-  background: linear-gradient(130deg, #ea580c, #f59e0b);
+  background: linear-gradient(132deg, #d97706, #f59e0b);
   color: white;
-  box-shadow: 0 10px 24px rgba(234, 88, 12, 0.34);
+  box-shadow: 0 12px 26px rgba(217, 119, 6, 0.35);
 }
 
 .btn-ghost {
-  border: 1px solid rgba(148, 163, 184, 0.4);
-  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  background: rgba(255, 255, 255, 0.84);
   color: #0f172a;
 }
 
 .btn-solid:hover,
 .btn-ghost:hover {
-  transform: translateY(-1px);
+  transform: translateY(-1px) scale(1.01);
+}
+
+.btn-ghost:hover {
+  border-color: rgba(51, 65, 85, 0.55);
 }
 
 .metrics {
@@ -129,10 +151,11 @@
 }
 
 .metric {
-  border: 1px solid rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.96);
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.9);
   padding: 0.88rem;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
 }
 
 .metric h2 {
@@ -147,16 +170,16 @@
   letter-spacing: 0.08em;
   font-size: 0.75rem;
   font-weight: 700;
-  color: #475569;
+  color: var(--ink-500);
 }
 
 .card {
   margin-top: 0.95rem;
-  border: 1px solid rgba(226, 232, 240, 0.9);
+  border: 1px solid rgba(226, 232, 240, 0.92);
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.89);
+  background: rgba(255, 255, 255, 0.93);
   padding: 1.3rem;
-  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
   animation: rise 760ms ease;
 }
 
@@ -167,7 +190,7 @@
 }
 
 .card p {
-  color: #334155;
+  color: var(--ink-700);
 }
 
 .grid {
@@ -187,8 +210,14 @@
 .project-card {
   border: 1px solid #e2e8f0;
   border-radius: 16px;
-  background: linear-gradient(172deg, #ffffff, #f8fafc);
+  background: linear-gradient(172deg, #ffffff, #f7fbff);
   padding: 0.9rem;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
 }
 
 .project-category {
@@ -196,7 +225,7 @@
   font-size: 0.74rem;
   letter-spacing: 0.08em;
   font-weight: 800;
-  color: #c2410c;
+  color: #b45309;
 }
 
 .project-card h3 {
@@ -235,8 +264,8 @@
 .chip {
   border-radius: 999px;
   border: 1px solid #dbe3ee;
-  background: #ffffff;
-  color: #334155;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  color: var(--ink-700);
   font-size: 0.82rem;
   font-weight: 700;
   padding: 0.38rem 0.8rem;
@@ -249,9 +278,9 @@
 }
 
 .timeline-item {
-  border-left: 4px solid #fb923c;
+  border-left: 4px solid #f59e0b;
   border-radius: 8px;
-  background: #fffdf8;
+  background: linear-gradient(180deg, #fffefb, #fffbf1);
   padding: 0.64rem 0.92rem;
 }
 
@@ -260,7 +289,7 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 0.78rem;
-  color: #9a3412;
+  color: #92400e;
   font-weight: 800;
 }
 
@@ -280,7 +309,7 @@
 
 .footer {
   text-align: center;
-  color: #64748b;
+  color: var(--ink-500);
   font-size: 0.9rem;
   margin: 0.8rem auto 1.2rem;
 }

@@ -257,7 +257,7 @@ function App() {
               target="_blank"
               rel="noreferrer"
             >
-              linkedin.com/in/michael-obi-30109617
+              LinkedIn
             </a>
           </div>
         </section>
